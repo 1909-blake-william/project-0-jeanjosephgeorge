@@ -13,7 +13,7 @@ public class AdminControlPrompt implements Prompt {
 	public Prompt run() {
 
 		System.out.println("\nPlease Select Option");
-		System.out.println("1. View All Users\n2. View All Accounts\n3. Logout");
+		System.out.println("1. View All Users\n2. View All Accounts\n3. View All Transactions\n4. Change User Access\n5. Logout");
 		String value = scan.nextLine();
 
 		switch (value) {
@@ -27,8 +27,13 @@ public class AdminControlPrompt implements Prompt {
 				System.out.println(subAccount);
 			});
 			return this;
-
 		case "3":
+			System.out.println("Not Implemented yet.\n");
+			return this;
+		case "4":
+			System.out.println("Not Implemented yet.\n");
+			return this;
+		case "5":
 			return new MainMenuPrompt();
 
 		default:
